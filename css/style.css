@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*,::before,::after{ margin: 0; box-sizing: border-box; }
+a{ text-decoration: none;}
+button{ cursor: pointer; padding: 0;}
+label{ display: inline-block;}
+img{ vertical-align: bottom;}
+:disabled{ cursor: not-allowed; opacity: 0.5;}
+ul{ list-style: none; padding: 0;}
+
+html{ font-size: 15px;}
+
+body{ font: 16px "Roboto", sans-serif;  }
+
+.container{ max-width:1140px; margin: auto; padding: 0 1rem;}
+.row{
+     display: grid;
+     gap: 2rem;
+     grid-template-columns: repeat(12, 1fr);
+}
+
+.col-2{ grid-column: span 2;}
+.col-3{ grid-column: span 3;}
+.col-4{ grid-column: span 4;}
+.col-6{ grid-column: span 6;}
+.col-8{ grid-column: span 8;}
+.col-9{ grid-column: span 9;}
+
+.img-resp{ max-width: 100%; height: auto; }
+.flex{ display: flex; }
+.align-center{ align-items: center;}
+.space-bet{ justify-content: space-between; }
+.just-center{ justify-content: center; }
+.just-right{ justify-content: flex-end; }
+.text-center{ text-align: center;}
+
+
+
+/* layout */
+.wrap-1{ background: url(../img/bg-1.svg) no-repeat right top; }
+header{ }
+h1{ line-height: 60px; font-size: 26px;}
+header a{ color: #37447E; display: block;}
+nav ul{ gap: 4rem;}
+nav a{ display: block; font-size: 14px; }
+.buy{ height: 26px; width: 160px; background: #111b47; color: #fff; border: none; }
+
+.banner{ padding: 250px 0;}
+.banner h2{ color: #091133; font-size: 50px; font-weight: 500;}
+.banner p{ font-size: 18px; line-height: 30px; color: #505F98; margin: 20px 0;}
+.banner a{ margin-top: 49px; width: 189px; line-height: 32px; display: inline-block; text-align: center; color: #111b47; border: 2px solid;}
+.banner a.active{  background: #111b47; color: #fff;}
+
+
+
+.wrap-2{ }
+
+
+.wrap-3{ }
+
+
+.wrap-4{ }
+
+
+
+/* responsive */
+@media screen and (max-width:1160px){
+      
+}
+
+@media screen and (max-width:980px){
+.col-t-2{ grid-column: span 2;}
+.col-t-3{ grid-column: span 3;}
+.col-t-4{ grid-column: span 4;}
+.col-t-6{ grid-column: span 6;}
+.col-t-12{ grid-column: span 12;}
+nav ul{ gap: 2rem;}
+}
+
+@media screen and (max-width:767px){
+.col-m-3{ grid-column: span 3;}
+.col-m-4{ grid-column: span 4;}
+.col-m-6{ grid-column: span 6;}
+.col-m-12{ grid-column: span 12;}  
+}
+
+@media screen and (max-width:466px){
+.col-p-4{ grid-column: span 4;}
+.col-p-6{ grid-column: span 6;}
+.col-p-12{ grid-column: span 12;} 
+nav{ display: none;}
+}
